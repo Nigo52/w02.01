@@ -2,7 +2,8 @@ const express = require('express');
 const app = express();
 const router = express.Router();
 const fs = require("fs");
-
+const host = '0.0.0.0';
+const host = '0.0.0.0';
 console.log("Web has been initialized" +" "+ port);
 
 //--------------------Routing----------------------------------//
@@ -37,3 +38,6 @@ app.use('/about', router);
 app.use('/contact', router);
 
 //--------------------Launch----------------------------------//
+app.listen(port, host, function() {
+  console.log("Server started.......");
+});
