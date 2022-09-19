@@ -2,8 +2,7 @@ const express = require('express');
 const app = express();
 const router = express.Router();
 const fs = require("fs");
-app.set('port', process.env.PORT || 80);
-app.listen(port);
+
 console.log("Web has been initialized" +" "+ port);
 
 //--------------------Routing----------------------------------//
