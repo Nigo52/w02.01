@@ -3,7 +3,7 @@ const app = express();
 const router = express.Router();
 const fs = require("fs");
 const host = '0.0.0.0';
-const host = '0.0.0.0';
+const port = process.env.PORT || 3000;
 console.log("Web has been initialized" +" "+ port);
 
 //--------------------Routing----------------------------------//
